@@ -45,16 +45,26 @@ export default sidebar({
           text: "面试准备知识体系",
           link: "/interview-preparation/",
         },
-        { text: "Java 后端面试通关计划", link: "backend-interview-plan" },
-        "teach-you-how-to-prepare-for-the-interview-hand-in-hand",
-        "resume-guide",
-        { text: "Java 后端面试重点总结", link: "key-points-of-interview" },
+        { text: "⭐Java 后端面试通关计划", link: "backend-interview-plan" },
+        {
+          text: "⭐如何高效准备 Java 面试？",
+          link: "teach-you-how-to-prepare-for-the-interview-hand-in-hand",
+        },
+        { text: "⭐程序员简历编写指南", link: "resume-guide" },
+        {
+          text: "⭐Java 后端面试重点总结",
+          link: "key-points-of-interview",
+        },
         {
           text: "Java 面试 + 后端面试 PDF 资料",
           link: "pdf-interview-javaguide",
         },
         { text: "Java 学习路线", link: "java-roadmap" },
-        "project-experience-guide",
+        { text: "⭐项目经验指南", link: "project-experience-guide" },
+        {
+          text: "⭐后端项目面试怎么讲？",
+          link: "backend-project-interview-guide",
+        },
         "how-to-handle-interview-nerves",
         "internship-experience",
       ],
@@ -74,9 +84,18 @@ export default sidebar({
           prefix: "basis/",
           icon: ICONS.BASIC,
           children: [
-            "java-basic-questions-01",
-            "java-basic-questions-02",
-            "java-basic-questions-03",
+            {
+              text: "⭐Java 基础常见面试题（上）",
+              link: "java-basic-questions-01",
+            },
+            {
+              text: "⭐Java 基础常见面试题（中）",
+              link: "java-basic-questions-02",
+            },
+            {
+              text: "⭐Java 基础常见面试题（下）",
+              link: "java-basic-questions-03",
+            },
             createImportantSection([
               "why-there-only-value-passing-in-java",
               "serialization",
@@ -99,8 +118,14 @@ export default sidebar({
           prefix: "collection/",
           icon: ICONS.CONTAINER,
           children: [
-            "java-collection-questions-01",
-            "java-collection-questions-02",
+            {
+              text: "⭐Java 集合常见面试题（上）",
+              link: "java-collection-questions-01",
+            },
+            {
+              text: "⭐Java 集合常见面试题（下）",
+              link: "java-collection-questions-02",
+            },
             "java-collection-precautions-for-use",
             createSourceCodeSection([
               "arraylist-source-code",
@@ -120,9 +145,18 @@ export default sidebar({
           prefix: "concurrent/",
           icon: ICONS.PERFORMANCE,
           children: [
-            "java-concurrent-questions-01",
-            "java-concurrent-questions-02",
-            "java-concurrent-questions-03",
+            {
+              text: "⭐Java 并发常见面试题（上）",
+              link: "java-concurrent-questions-01",
+            },
+            {
+              text: "⭐Java 并发常见面试题（中）",
+              link: "java-concurrent-questions-02",
+            },
+            {
+              text: "⭐Java 并发常见面试题（下）",
+              link: "java-concurrent-questions-03",
+            },
             createImportantSection([
               { text: "Java 锁详解", link: "java-lock" },
               "optimistic-lock-and-pessimistic-lock",
@@ -153,8 +187,8 @@ export default sidebar({
           collapsible: true,
           children: [
             {
-              text: "JVM常见面试题总结",
-              link: "https://interview.javaguide.cn/java/java-jvm.html",
+              text: "⭐JVM 常见面试题总结",
+              link: "jvm-interview-questions",
             },
             "memory-area",
             "jvm-garbage-collection",
@@ -163,7 +197,10 @@ export default sidebar({
             "classloader",
             "jvm-parameters-intro",
             "jdk-monitoring-and-troubleshooting-tools",
-            "jvm-in-action",
+            {
+              text: "Java 后端线上问题排查",
+              link: "jvm-in-action",
+            },
           ],
         },
         {
@@ -233,7 +270,7 @@ export default sidebar({
           prefix: "mysql/",
           icon: ICONS.MYSQL,
           children: [
-            "mysql-questions-01",
+            { text: "⭐MySQL 常见面试题总结", link: "mysql-questions-01" },
             "mysql-high-performance-optimization-specification-recommendations",
             createImportantSection([
               "mysql-index",
@@ -245,6 +282,10 @@ export default sidebar({
               {
                 text: "MySQL备份与恢复",
                 link: "mysql-backup-and-restore",
+              },
+              {
+                text: "MySQL同步ES方案",
+                link: "mysql-to-elasticsearch-sync",
               },
               "transaction-isolation-level",
               "innodb-implementation-of-mvcc",
@@ -263,8 +304,14 @@ export default sidebar({
           icon: ICONS.REDIS,
           children: [
             "cache-basics",
-            "redis-questions-01",
-            "redis-questions-02",
+            {
+              text: "⭐Redis 常见面试题总结（上）",
+              link: "redis-questions-01",
+            },
+            {
+              text: "⭐Redis 常见面试题总结（下）",
+              link: "redis-questions-02",
+            },
             createImportantSection([
               "redis-delayed-task",
               "redis-stream-mq",
@@ -350,8 +397,14 @@ export default sidebar({
           icon: ICONS.SPRING_BOOT,
           prefix: "spring/",
           children: [
-            "spring-knowledge-and-questions-summary",
-            "springboot-knowledge-and-questions-summary",
+            {
+              text: "Spring 常见面试题总结",
+              link: "spring-knowledge-and-questions-summary",
+            },
+            {
+              text: "Spring Boot 常见面试题总结",
+              link: "springboot-knowledge-and-questions-summary",
+            },
             "spring-common-annotations",
             "springboot-source-code",
             createImportantSection([
@@ -363,7 +416,10 @@ export default sidebar({
             ]),
           ],
         },
-        "mybatis/mybatis-interview",
+        {
+          text: "MyBatis 常见面试题总结",
+          link: "mybatis/mybatis-interview",
+        },
         "netty",
       ],
     },
@@ -419,7 +475,10 @@ export default sidebar({
             "why-password-reset-instead-of-retrieval",
           ],
         },
-        "system-design-questions",
+        {
+          text: "⭐系统设计常见面试题总结",
+          link: "system-design-questions",
+        },
         {
           text: "⭐设计模式常见面试题总结",
           link: "https://interview.javaguide.cn/system-design/design-pattern.html",
@@ -445,6 +504,10 @@ export default sidebar({
         {
           text: "⭐分布式高频面试题",
           link: "distributed-system-interview-questions",
+        },
+        {
+          text: "⭐微服务高频面试题",
+          link: "microservices-interview-questions",
         },
         {
           text: "理论&算法&协议",
@@ -556,7 +619,7 @@ export default sidebar({
         },
         {
           text: "⭐高性能系统设计高频面试题",
-          link: "high-performance-interview-questions",
+          link: "high-performance-system-interview-questions",
         },
         {
           text: "CDN",
@@ -586,6 +649,10 @@ export default sidebar({
           icon: ICONS.MQ,
           collapsible: true,
           children: [
+            {
+              text: "⭐消息队列高频面试题",
+              link: "message-queue-interview-questions",
+            },
             "message-queue",
             "disruptor-questions",
             "kafka-questions-01",
@@ -607,7 +674,7 @@ export default sidebar({
         },
         {
           text: "⭐高可用系统面试题总结",
-          link: "high-availability-interview-questions",
+          link: "high-availability-system-interview-questions",
         },
         {
           text: "高可用系统设计指南",

@@ -113,6 +113,7 @@ JavaGuide 是一份系统化的 **Java 面试指南** 和**后端通用面试复
 
 JVM 这部分内容主要参考 [JVM 虚拟机规范-Java8](https://docs.oracle.com/javase/specs/jvms/se8/html/index.html) 和周志明老师的[《深入理解 Java 虚拟机（第 3 版）》](https://book.douban.com/subject/34907497/) （强烈建议阅读多遍！）。
 
+- **[⭐JVM 常见面试题总结](./java/jvm/jvm-interview-questions.md)**
 - **[Java 内存区域](./java/jvm/memory-area.md)**
 - **[JVM 垃圾回收](./java/jvm/jvm-garbage-collection.md)**
 - [类文件结构](./java/jvm/class-file-structure.md)
@@ -292,6 +293,8 @@ JVM 这部分内容主要参考 [JVM 虚拟机规范-Java8](https://docs.oracle.
 ## 分布式
 
 - [⭐分布式高频面试题](https://interview.javaguide.cn/distributed-system/distributed-system.html)
+- [分布式系统面试准备](./distributed-system/distributed-system-interview-questions.md)
+- [微服务面试准备](./distributed-system/microservices-interview-questions.md)
 - [分布式系统入门](./distributed-system/distributed-system-intro.md)
 
 ### 理论&算法&协议
@@ -359,6 +362,7 @@ JVM 这部分内容主要参考 [JVM 虚拟机规范-Java8](https://docs.oracle.
 
 ### 消息队列
 
+- [消息队列面试准备](./high-performance/message-queue/message-queue-interview-questions.md)
 - [消息队列基础知识总结](./high-performance/message-queue/message-queue.md)
 - [Disruptor 常见知识点&面试题总结](./high-performance/message-queue/disruptor-questions.md)
 - [RabbitMQ 常见知识点&面试题总结](./high-performance/message-queue/rabbitmq-questions.md)
